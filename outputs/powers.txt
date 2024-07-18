@@ -1,0 +1,100 @@
+Game 1: 4 green, 7 blue; 2 blue, 4 red; 5 blue, 2 green, 2 red; 1 green, 3 red, 9 blue; 3 green, 9 blue; 7 green, 2 blue, 2 red: fromList [(Green,7),(Blue,9),(Red,4)] -> 252
+Game 2: 1 blue, 2 red; 1 green, 2 blue, 1 red; 1 red, 5 green; 3 red, 2 blue, 8 green; 3 blue, 2 red, 4 green; 2 blue, 4 green, 3 red: fromList [(Green,8),(Blue,3),(Red,3)] -> 72
+Game 3: 7 red, 7 blue, 9 green; 15 green, 4 red, 8 blue; 3 green, 12 blue, 6 red: fromList [(Green,15),(Blue,12),(Red,7)] -> 1260
+Game 4: 4 blue, 11 green, 6 red; 4 green, 2 red; 12 red, 1 blue, 3 green: fromList [(Green,11),(Blue,4),(Red,12)] -> 528
+Game 5: 10 green, 4 blue, 9 red; 3 green, 15 blue, 11 red; 15 blue, 1 green, 2 red; 8 red, 8 blue, 5 green: fromList [(Green,10),(Blue,15),(Red,11)] -> 1650
+Game 6: 5 green, 19 red; 6 green, 13 red, 2 blue; 2 blue, 16 red, 4 green; 13 red, 9 blue, 5 green: fromList [(Green,6),(Blue,9),(Red,19)] -> 1026
+Game 7: 1 blue, 6 red, 6 green; 7 blue, 4 red; 6 green, 1 red, 11 blue; 3 green, 4 blue, 4 red; 6 green, 13 blue, 11 red: fromList [(Green,6),(Blue,13),(Red,11)] -> 858
+Game 8: 8 green, 2 blue; 20 green, 1 red; 1 blue, 6 red, 6 green; 9 green: fromList [(Green,20),(Blue,2),(Red,6)] -> 240
+Game 9: 5 red; 4 green, 3 red, 1 blue; 1 blue; 6 red, 1 blue, 9 green: fromList [(Green,9),(Blue,1),(Red,6)] -> 54
+Game 10: 2 green, 3 red; 18 blue, 20 green, 9 red; 7 red, 9 blue, 17 green: fromList [(Green,20),(Blue,18),(Red,9)] -> 3240
+Game 11: 15 green, 7 blue, 9 red; 7 blue, 10 green, 7 red; 5 red, 3 blue, 10 green; 5 blue, 12 green; 14 green, 8 blue, 5 red; 7 blue, 2 red, 5 green: fromList [(Green,15),(Blue,8),(Red,9)] -> 1080
+Game 12: 3 green, 1 red, 8 blue; 9 blue, 3 red, 3 green; 4 blue, 1 green; 2 red, 3 green, 1 blue; 4 red, 7 blue, 3 green: fromList [(Green,3),(Blue,9),(Red,4)] -> 108
+Game 13: 14 green, 1 red; 4 green; 2 green, 1 blue; 14 green; 13 green, 1 red, 1 blue; 1 blue, 1 red, 5 green: fromList [(Green,14),(Blue,1),(Red,1)] -> 14
+Game 14: 1 blue, 6 red, 13 green; 5 red, 10 blue, 3 green; 19 green, 1 red, 14 blue; 4 red, 17 green, 9 blue; 12 green, 10 blue, 7 red: fromList [(Green,19),(Blue,14),(Red,7)] -> 1862
+Game 15: 10 red, 2 blue, 18 green; 17 green, 3 blue, 7 red; 18 blue, 8 red, 12 green; 6 blue, 6 green, 12 red: fromList [(Green,18),(Blue,18),(Red,12)] -> 3888
+Game 16: 14 blue, 5 green, 12 red; 7 green, 3 red, 9 blue; 4 green, 1 red, 8 blue; 9 red, 19 green, 12 blue; 12 blue, 7 red, 6 green; 5 blue, 3 green, 6 red: fromList [(Green,19),(Blue,14),(Red,12)] -> 3192
+Game 17: 1 green, 1 blue, 15 red; 1 blue, 3 green, 12 red; 9 blue, 2 green, 10 red: fromList [(Green,3),(Blue,9),(Red,15)] -> 405
+Game 18: 12 red, 7 green, 7 blue; 3 blue, 8 red, 1 green; 2 green, 17 red: fromList [(Green,7),(Blue,7),(Red,17)] -> 833
+Game 19: 1 red, 7 blue, 17 green; 11 red, 15 blue; 11 blue, 18 green; 6 blue, 14 green, 14 red; 16 blue, 8 red, 8 green; 17 green, 9 red, 1 blue: fromList [(Green,18),(Blue,16),(Red,14)] -> 4032
+Game 20: 11 green; 1 blue, 4 green, 7 red; 7 green; 3 red, 1 blue, 6 green: fromList [(Green,11),(Blue,1),(Red,7)] -> 77
+Game 21: 18 blue, 6 green, 10 red; 12 blue; 9 blue, 2 green, 9 red; 9 red, 20 blue, 1 green; 8 blue, 6 red; 19 blue, 1 green, 4 red: fromList [(Green,6),(Blue,20),(Red,10)] -> 1200
+Game 22: 4 blue, 16 red, 3 green; 7 blue, 3 green, 12 red; 10 red, 7 green, 10 blue; 7 red, 11 blue, 4 green; 3 blue, 1 green, 16 red: fromList [(Green,7),(Blue,11),(Red,16)] -> 1232
+Game 23: 5 green, 8 red, 1 blue; 2 red, 5 blue, 3 green; 2 green, 17 blue, 4 red; 2 blue, 2 red; 7 red, 1 green, 14 blue; 4 red, 8 blue: fromList [(Green,5),(Blue,17),(Red,8)] -> 680
+Game 24: 1 blue, 3 green, 1 red; 3 blue, 11 green, 15 red; 3 blue, 2 red, 12 green; 9 green, 6 red, 2 blue; 15 green, 12 red, 3 blue; 13 green, 1 blue, 13 red: fromList [(Green,15),(Blue,3),(Red,15)] -> 675
+Game 25: 6 blue, 5 red, 10 green; 9 red, 3 blue, 3 green; 6 blue, 11 red, 15 green; 7 green, 10 red, 4 blue; 2 red, 20 blue, 11 green: fromList [(Green,15),(Blue,20),(Red,11)] -> 3300
+Game 26: 3 blue, 5 red, 10 green; 7 green, 6 red; 7 green, 1 red, 3 blue; 10 green, 4 red, 3 blue; 4 red, 7 green, 3 blue; 8 green, 4 red: fromList [(Green,10),(Blue,3),(Red,6)] -> 180
+Game 27: 16 green, 6 blue, 4 red; 3 red, 6 blue, 7 green; 10 green; 6 green, 1 red: fromList [(Green,16),(Blue,6),(Red,4)] -> 384
+Game 28: 5 green, 5 red, 2 blue; 1 blue, 9 red, 6 green; 2 blue, 3 red; 1 blue, 1 green, 5 red; 4 green, 3 red; 9 green, 1 blue, 14 red: fromList [(Green,9),(Blue,2),(Red,14)] -> 252
+Game 29: 1 red, 2 green, 13 blue; 1 green, 2 red, 9 blue; 12 red; 3 blue, 5 red: fromList [(Green,2),(Blue,13),(Red,12)] -> 312
+Game 30: 8 blue, 3 red, 9 green; 10 green, 9 blue; 9 green, 12 blue; 3 blue, 2 red, 4 green; 8 blue, 9 green; 1 red, 12 blue, 6 green: fromList [(Green,10),(Blue,12),(Red,3)] -> 360
+Game 31: 8 red, 16 blue; 2 red, 1 green, 1 blue; 5 red, 8 blue, 1 green: fromList [(Green,1),(Blue,16),(Red,8)] -> 128
+Game 32: 3 green, 5 blue, 8 red; 10 blue, 1 red, 3 green; 9 green, 3 blue, 2 red; 2 blue, 1 red, 14 green; 3 blue, 10 red, 16 green: fromList [(Green,16),(Blue,10),(Red,10)] -> 1600
+Game 33: 1 red, 3 green, 2 blue; 15 blue, 1 green; 1 green, 1 red, 10 blue: fromList [(Green,3),(Blue,15),(Red,1)] -> 45
+Game 34: 4 green, 7 blue; 2 blue, 12 green; 6 red, 14 green, 7 blue: fromList [(Green,14),(Blue,7),(Red,6)] -> 588
+Game 35: 9 blue, 1 green; 2 green, 6 blue, 11 red; 1 green, 10 red, 1 blue: fromList [(Green,2),(Blue,9),(Red,11)] -> 198
+Game 36: 5 blue, 1 green, 2 red; 11 blue, 3 green, 5 red; 2 green, 14 blue, 2 red; 3 green, 5 blue, 5 red; 13 blue, 2 green, 5 red; 3 green: fromList [(Green,3),(Blue,14),(Red,5)] -> 210
+Game 37: 4 blue, 2 red, 8 green; 1 blue, 9 green, 4 red; 1 red, 4 green, 1 blue; 16 green, 3 blue, 4 red: fromList [(Green,16),(Blue,4),(Red,4)] -> 256
+Game 38: 9 blue, 9 green; 1 green, 3 blue; 8 blue, 6 red, 5 green; 1 green, 9 red, 1 blue: fromList [(Green,9),(Blue,9),(Red,9)] -> 729
+Game 39: 1 red, 17 green; 1 blue, 7 green, 7 red; 6 red, 4 blue: fromList [(Green,17),(Blue,4),(Red,7)] -> 476
+Game 40: 1 blue, 2 red; 10 blue, 4 green, 2 red; 1 green, 11 blue, 3 red; 4 blue, 2 green; 3 blue, 4 red: fromList [(Green,4),(Blue,11),(Red,4)] -> 176
+Game 41: 7 red, 4 blue, 4 green; 10 red, 11 blue, 1 green; 6 red, 6 blue, 4 green; 13 blue, 3 red, 7 green; 9 green, 12 blue, 14 red; 9 blue, 12 red, 10 green: fromList [(Green,10),(Blue,13),(Red,14)] -> 1820
+Game 42: 3 blue, 1 red, 11 green; 4 blue, 9 green, 8 red; 3 red, 5 blue, 1 green: fromList [(Green,11),(Blue,5),(Red,8)] -> 440
+Game 43: 2 green, 17 blue, 9 red; 16 red, 12 blue, 2 green; 12 red, 12 blue, 7 green; 17 red, 16 blue, 7 green: fromList [(Green,7),(Blue,17),(Red,17)] -> 2023
+Game 44: 2 red, 3 green, 5 blue; 5 red, 5 blue, 7 green; 2 red, 5 blue, 5 green; 6 red, 5 blue, 2 green: fromList [(Green,7),(Blue,5),(Red,6)] -> 210
+Game 45: 9 green, 1 blue; 1 red, 5 green, 2 blue; 2 blue, 4 green, 9 red; 13 green, 7 red, 1 blue; 3 blue, 4 green: fromList [(Green,13),(Blue,3),(Red,9)] -> 351
+Game 46: 5 green, 7 red; 8 green, 5 blue, 1 red; 1 blue, 7 red, 17 green: fromList [(Green,17),(Blue,5),(Red,7)] -> 595
+Game 47: 1 green, 17 blue; 9 blue, 1 green; 1 blue, 1 red: fromList [(Green,1),(Blue,17),(Red,1)] -> 17
+Game 48: 1 red, 6 green, 7 blue; 9 green, 1 red, 2 blue; 10 blue, 6 green, 1 red; 1 red, 4 green, 9 blue; 6 blue, 3 green, 1 red: fromList [(Green,9),(Blue,10),(Red,1)] -> 90
+Game 49: 1 red, 1 blue, 16 green; 3 red, 1 green; 16 green; 2 blue, 8 red, 19 green; 20 green, 9 red; 8 green, 6 red: fromList [(Green,20),(Blue,2),(Red,9)] -> 360
+Game 50: 1 green, 2 blue; 2 red, 3 blue; 4 red, 2 blue; 1 green; 3 blue; 3 blue, 2 green, 1 red: fromList [(Green,2),(Blue,3),(Red,4)] -> 24
+Game 51: 6 blue, 5 green; 6 red, 5 green; 6 green, 6 blue, 16 red; 10 red, 10 green, 1 blue: fromList [(Green,10),(Blue,6),(Red,16)] -> 960
+Game 52: 4 red, 5 green, 1 blue; 15 green, 1 blue; 8 green, 5 blue, 5 red; 4 blue, 11 green, 1 red: fromList [(Green,15),(Blue,5),(Red,5)] -> 375
+Game 53: 5 green, 3 blue, 5 red; 2 red, 4 blue, 1 green; 1 red, 2 green; 11 red: fromList [(Green,5),(Blue,4),(Red,11)] -> 220
+Game 54: 7 green, 16 blue, 5 red; 5 green; 10 blue, 6 green, 5 red; 3 green: fromList [(Green,7),(Blue,16),(Red,5)] -> 560
+Game 55: 3 green; 16 green, 1 blue; 13 green, 19 blue, 1 red; 13 green, 18 blue: fromList [(Green,16),(Blue,19),(Red,1)] -> 304
+Game 56: 9 green; 3 blue, 1 red, 10 green; 1 red, 4 blue, 9 green: fromList [(Green,10),(Blue,4),(Red,1)] -> 40
+Game 57: 14 blue, 2 red, 3 green; 1 red, 8 blue, 7 green; 1 green, 3 red, 15 blue; 5 green, 12 blue; 4 green, 15 blue: fromList [(Green,7),(Blue,15),(Red,3)] -> 315
+Game 58: 9 red, 5 green; 10 green, 11 red, 1 blue; 12 green, 17 red, 1 blue; 1 blue, 1 green, 17 red; 14 red, 1 blue, 16 green: fromList [(Green,16),(Blue,1),(Red,17)] -> 272
+Game 59: 2 red, 12 blue, 10 green; 6 green, 1 red, 14 blue; 14 blue, 9 green, 2 red; 12 green, 14 blue, 2 red: fromList [(Green,12),(Blue,14),(Red,2)] -> 336
+Game 60: 5 blue, 8 green; 1 red, 6 green, 7 blue; 1 blue: fromList [(Green,8),(Blue,7),(Red,1)] -> 56
+Game 61: 5 red, 2 blue, 5 green; 2 blue, 11 green; 1 blue, 2 red, 14 green; 3 green; 4 red, 13 green; 2 blue, 6 green, 1 red: fromList [(Green,14),(Blue,2),(Red,5)] -> 140
+Game 62: 1 red, 1 blue, 2 green; 3 red, 1 blue, 2 green; 1 blue, 10 red; 6 red, 1 blue: fromList [(Green,2),(Blue,1),(Red,10)] -> 20
+Game 63: 7 red, 6 blue, 4 green; 2 blue, 5 green, 8 red; 5 blue, 4 green, 10 red; 4 blue, 7 red, 10 green; 5 blue, 10 green, 8 red; 4 blue, 10 green, 3 red: fromList [(Green,10),(Blue,6),(Red,10)] -> 600
+Game 64: 6 red, 7 green, 15 blue; 8 blue, 16 green, 3 red; 11 green, 12 blue; 4 red, 17 blue, 8 green: fromList [(Green,16),(Blue,17),(Red,6)] -> 1632
+Game 65: 2 blue, 7 green; 2 red, 8 blue; 2 green, 1 red, 5 blue; 1 green, 2 blue; 19 green, 7 blue; 2 red, 3 blue, 14 green: fromList [(Green,19),(Blue,8),(Red,2)] -> 304
+Game 66: 15 green, 7 blue; 9 blue, 3 green, 16 red; 1 red, 1 blue, 16 green; 18 red, 8 blue, 11 green: fromList [(Green,16),(Blue,9),(Red,18)] -> 2592
+Game 67: 1 blue, 1 green, 2 red; 5 green, 8 red, 2 blue; 7 red, 1 blue: fromList [(Green,5),(Blue,2),(Red,8)] -> 80
+Game 68: 3 blue, 10 red; 13 red, 1 green; 5 blue, 5 red; 2 blue, 1 green, 16 red; 16 red, 3 blue: fromList [(Green,1),(Blue,5),(Red,16)] -> 80
+Game 69: 7 red, 1 blue, 3 green; 14 green, 2 blue; 3 green, 2 blue; 4 red, 1 green, 1 blue; 10 red, 14 green, 2 blue: fromList [(Green,14),(Blue,2),(Red,10)] -> 280
+Game 70: 10 green, 12 red; 5 red, 7 green; 1 blue, 6 red, 11 green: fromList [(Green,11),(Blue,1),(Red,12)] -> 132
+Game 71: 16 green, 13 red, 10 blue; 7 red, 7 blue, 15 green; 17 green, 13 red, 1 blue; 5 blue, 8 green, 11 red; 7 red, 1 blue, 15 green; 15 green, 4 blue, 2 red: fromList [(Green,17),(Blue,10),(Red,13)] -> 2210
+Game 72: 3 blue, 3 red; 2 blue, 3 red, 1 green; 1 red, 1 blue, 3 green; 1 green, 2 blue, 3 red; 3 blue, 1 green, 1 red; 1 blue, 4 red: fromList [(Green,3),(Blue,3),(Red,4)] -> 36
+Game 73: 10 blue, 11 red, 5 green; 6 green, 9 blue, 4 red; 10 red, 5 green, 9 blue: fromList [(Green,6),(Blue,10),(Red,11)] -> 660
+Game 74: 6 green, 17 blue; 1 red, 1 blue, 11 green; 2 blue, 1 red, 3 green: fromList [(Green,11),(Blue,17),(Red,1)] -> 187
+Game 75: 11 red, 11 green, 3 blue; 11 red, 1 blue, 6 green; 4 green, 3 blue, 8 red: fromList [(Green,11),(Blue,3),(Red,11)] -> 363
+Game 76: 3 green, 3 blue, 12 red; 3 blue, 15 green, 3 red; 4 red, 15 green, 2 blue: fromList [(Green,15),(Blue,3),(Red,12)] -> 540
+Game 77: 13 blue, 11 red, 1 green; 3 red, 12 green, 12 blue; 7 red, 15 green, 4 blue; 5 red, 2 green, 3 blue: fromList [(Green,15),(Blue,13),(Red,11)] -> 2145
+Game 78: 4 red, 8 blue, 2 green; 7 blue, 3 green, 7 red; 3 green, 13 blue; 3 red, 4 green: fromList [(Green,4),(Blue,13),(Red,7)] -> 364
+Game 79: 7 blue, 13 red, 8 green; 7 green, 15 red, 9 blue; 2 green, 8 red, 10 blue; 13 blue, 20 red, 7 green; 11 red, 2 green, 14 blue: fromList [(Green,8),(Blue,14),(Red,20)] -> 2240
+Game 80: 12 red; 2 blue, 15 red, 3 green; 1 blue, 1 green, 2 red; 1 green; 1 green, 3 blue, 13 red; 1 green, 2 blue, 1 red: fromList [(Green,3),(Blue,3),(Red,15)] -> 135
+Game 81: 11 blue; 6 blue, 8 green, 4 red; 7 blue, 1 red, 1 green: fromList [(Green,8),(Blue,11),(Red,4)] -> 352
+Game 82: 9 blue, 1 red; 3 blue, 1 red, 3 green; 8 blue, 8 green, 2 red; 5 blue: fromList [(Green,8),(Blue,9),(Red,2)] -> 144
+Game 83: 7 blue, 13 red; 4 blue, 2 green, 3 red; 15 blue, 9 red, 1 green; 14 red, 1 green, 12 blue: fromList [(Green,2),(Blue,15),(Red,14)] -> 420
+Game 84: 8 blue, 1 green, 20 red; 9 green, 20 red, 18 blue; 16 red, 15 blue, 5 green; 15 red, 10 green, 16 blue; 11 green, 14 red, 12 blue: fromList [(Green,11),(Blue,18),(Red,20)] -> 3960
+Game 85: 1 red, 2 blue, 9 green; 13 green, 3 blue, 5 red; 1 green, 1 red, 3 blue; 8 green, 2 blue, 1 red: fromList [(Green,13),(Blue,3),(Red,5)] -> 195
+Game 86: 10 red, 6 blue, 11 green; 1 red, 11 green; 7 blue, 6 red, 11 green: fromList [(Green,11),(Blue,7),(Red,10)] -> 770
+Game 87: 14 red, 4 blue, 4 green; 14 red, 4 blue, 7 green; 12 red, 11 green, 5 blue; 5 blue, 12 red: fromList [(Green,11),(Blue,5),(Red,14)] -> 770
+Game 88: 3 green, 4 blue, 11 red; 3 green, 4 blue, 3 red; 10 red, 3 green; 3 blue, 2 red, 2 green: fromList [(Green,3),(Blue,4),(Red,11)] -> 132
+Game 89: 4 blue, 2 red, 3 green; 3 green, 7 red, 13 blue; 1 green, 6 blue: fromList [(Green,3),(Blue,13),(Red,7)] -> 273
+Game 90: 7 red; 5 blue, 11 red, 8 green; 8 red, 3 green, 2 blue: fromList [(Green,8),(Blue,5),(Red,11)] -> 440
+Game 91: 2 blue; 4 red; 2 blue, 4 green; 3 green, 1 blue, 1 red: fromList [(Green,4),(Blue,2),(Red,4)] -> 32
+Game 92: 7 blue, 10 green; 9 green, 9 blue, 7 red; 6 green; 12 red, 1 blue, 4 green; 5 red, 1 green, 13 blue: fromList [(Green,10),(Blue,13),(Red,12)] -> 1560
+Game 93: 7 green, 6 red, 1 blue; 3 red, 6 green, 8 blue; 1 blue, 6 green; 6 red, 15 blue, 4 green; 10 blue, 2 green, 6 red; 3 green, 5 red, 6 blue: fromList [(Green,7),(Blue,15),(Red,6)] -> 630
+Game 94: 5 red, 1 green, 15 blue; 1 blue, 6 red; 2 red, 6 blue, 2 green: fromList [(Green,2),(Blue,15),(Red,6)] -> 180
+Game 95: 9 blue, 4 red, 17 green; 15 green, 9 red, 10 blue; 1 blue, 13 green, 12 red: fromList [(Green,17),(Blue,10),(Red,12)] -> 2040
+Game 96: 1 blue, 12 green, 1 red; 3 blue, 1 green, 5 red; 2 blue, 8 red, 10 green: fromList [(Green,12),(Blue,3),(Red,8)] -> 288
+Game 97: 18 blue, 7 red, 11 green; 6 red, 3 blue, 14 green; 1 red, 13 blue, 4 green: fromList [(Green,14),(Blue,18),(Red,7)] -> 1764
+Game 98: 5 blue, 2 green, 8 red; 12 red; 13 red, 4 blue, 4 green; 7 red, 11 blue; 10 blue, 2 green, 2 red; 6 red, 12 blue: fromList [(Green,4),(Blue,12),(Red,13)] -> 624
+Game 99: 4 green, 2 blue, 4 red; 9 blue, 11 red, 1 green; 5 green: fromList [(Green,5),(Blue,9),(Red,11)] -> 495
+Game 100: 2 blue, 12 green; 6 green, 1 red, 12 blue; 1 green, 5 blue, 1 red; 1 red, 12 green, 6 blue; 16 blue, 3 green: fromList [(Green,12),(Blue,16),(Red,1)] -> 192
