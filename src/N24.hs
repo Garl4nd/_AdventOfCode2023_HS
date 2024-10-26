@@ -99,14 +99,14 @@ crossProd :: Vector -> Vector -> Vector
 dotProd :: Vector -> Vector -> Double
 (Vector a b c) `dotProd`  (Vector a' b' c') = a*a' + b*b' + c*c'
 
-getTFrom :: [Particle] -> Int ->Int -> Integer
+getTFrom :: [Particle] -> Int ->Int -> Int
 getTFrom ps i j = round  $ (  (xi `crossProd` xj) `dotProd` vj) / ( (vi `crossProd` vj) `dotProd` xj)
         where xi = position $ ps !! i
               xj = position $ ps !! j
               vi = velocity $ ps !! i
               vj = velocity $ ps !! j 
                   
-getTs :: [Particle] -> [Integer]
+getTs :: [Particle] -> [Int]
 getTs particles = (getTFrom particles 0 1 ): map (\i -> getTFrom particles i 0) [1..length particles-2]
 
 findInitialStonePosition :: [Particle] -> Vector
@@ -126,13 +126,13 @@ findInitialStonePosition particles =  x0  where
 solution1 :: String -> Int
 solution1 = numOfIntersections.parseParticles
 
-solution2 :: String -> Integer
+solution2 :: String -> Int
 solution2 file =  let Vector x y z = x0 in round $ x+y+z  where 
     x0 = findInitialStonePosition $ parseParticles file
     
         
     
-getSolutions24 :: String -> IO (Int, Integer)
+getSolutions24 :: String -> IO (Int, Int)
 getSolutions24 inputFile = do 
     file <- readFile inputFile 
     let particles  = parseParticles file
@@ -143,7 +143,7 @@ getSolutions24 inputFile = do
     return   (solution1 file, solution2 file)
 
     
--- calcTs :: String -> IO [Integer]
+-- calcTs :: String -> IO [Int]
 -- calcTs inputFile = do 
 --     file <- readFile inputFile 
 --     let particles  = parseParticles file
@@ -173,7 +173,7 @@ getSolutions24 inputFile = do
 
 -- --test :: String -> IO [(Double, Double)]
 -- test :: String -> IO Bool
--- --test :: String -> IO [Integer]
+-- --test :: String -> IO [Int]
 -- test inputFile = do 
 --     file <- readFile inputFile 
 --     let particles  = parseParticles file

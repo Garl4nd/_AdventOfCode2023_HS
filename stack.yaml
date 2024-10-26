@@ -8,17 +8,21 @@
 # A snapshot resolver dictates the compiler version and the set of packages
 # to be used for project dependencies. For example:
 #
-# resolver: lts-22.7
-# resolver: nightly-2024-01-20
-# resolver: ghc-9.6.4
+#Linux: uncomment
+resolver: lts-22.39
+#resolver: nightly-2024-01-20
+#Desktop: uncomment
+#resolver: ghc-9.6.4
+#resolver:
+#  url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/22/29.yaml
 #
 # The location of a snapshot can be provided as a file or url. Stack assumes
 # a snapshot provided as a file might change, whereas a url resource does not.
 #
 # resolver: ./custom-snapshot.yaml
 # resolver: https://example.com/snapshots/2023-01-01.yaml
-resolver:
-  url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/22/28.yaml
+#resolver: #linux uncomment
+#  url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/22/29.yaml
 
 # User packages to be built.
 # Various formats can be used as shown in the example below.
@@ -29,9 +33,20 @@ resolver:
 #   subdirs:
 #   - auto-update
 #   - wai
+extra-deps: [MemoTrie-0.6.11,  newtype-generics-0.6.2, memoize-1.1.2,  parallel-3.2.2.0, transformers-0.6.1.2, heap-1.0.4, fgl-5.8.3.0, 
+           directory-1.3.9.0,
+           exceptions-0.10.8,
+           #filepath-1.5.3.0,
+           mtl-2.3.1,
+           process-1.6.25.0,
+           Win32-2.14.0.0,
+           filepath-1.4.300.2,
+           time-1.14, 
+           timeit-2.0]
+#, regex-base-0.94.0.2, regex-pcre-builtin-0.95.2.3.8.44]
 packages:
 - .
-# Dependency packages to be pulled from upstream that are not in the resolver.
+# Dependency packages to be pulled from upstream that are not in the resolver.  
 # These entries can reference officially published versions as well as
 # forks / in-progress versions pinned to a git hash. For example:
 #
@@ -65,3 +80,4 @@ system-ghc: true
 #
 # Allow a newer minor version of GHC than the snapshot specifies
 # compiler-check: newer-minor
+    

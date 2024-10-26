@@ -58,7 +58,9 @@ getSum textnumMap file = sum nums  where
         nums = map (extractNum textnumMap) fileLines
     --return $ sum nums 
 
+solution1 :: T.Text -> Int
 solution1 = getSum plainNumberMap
+solution2 :: T.Text -> Int
 solution2 = getSum extNumberMap
 
 getSolutions1:: String -> IO (Int, Int)

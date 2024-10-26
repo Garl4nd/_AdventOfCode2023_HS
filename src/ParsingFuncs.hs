@@ -3,12 +3,15 @@ module ParsingFuncs
   , splitOn
   , readStrList
   , splitBySubstr
-  , writeXY, 
-  trimSpace
+  , writeXY
+  , pairs
+  , trimSpace
+  , countIf
   ) where
 
 import Data.Char (isNumber)
-import Data.List (findIndex, intercalate, isPrefixOf, tails)
+import Data.List (findIndex, intercalate, isPrefixOf, tails, groupBy, sortOn)
+import Data.Function (on)
 
 wordsWhen :: (a -> Bool) -> [a] -> [[a]]
 wordsWhen p s =
@@ -19,6 +22,8 @@ wordsWhen p s =
 
 splitOn :: Eq a => a -> [a] -> [[a]]
 splitOn c = wordsWhen (== c)
+
+
 
 trimIf :: (a -> Bool) -> [a] -> [a]
 trimIf p = reverse . (dropWhile p) . reverse . (dropWhile p)
@@ -42,8 +47,20 @@ splitBySubstr delim str =
     Just idx ->
       take idx str : splitBySubstr delim (drop (idx + length delim) str)
 
+pairs :: [a] -> Maybe [(a, a)]
+pairs (x0:x1:xs) =  ((x0, x1) :) <$> pairs xs
+pairs [_] = Nothing
+pairs [] = Just []
+
 writeXY :: Show a => String -> [a] -> [a] -> IO ()
 writeXY fileName xs ys = do
   writeFile fileName
     $ intercalate "\n"
     $ zipWith (\x y -> show x <> ", " <> show y) xs ys
+
+groupByUnique :: (Ord b) => (a->b) -> [a] -> [(a, Int)]
+groupByUnique ordFunc ls = map (\grp -> (fst $ head grp, length grp)) (  groupBy ( (==) `on` snd) sortedList) where
+   sortedList = sortOn snd $ map (\x -> (x, ordFunc x)) ls
+
+countIf :: (a-> Bool) -> [a] -> Int
+countIf p ls = length $ filter p ls

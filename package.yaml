@@ -24,9 +24,28 @@ dependencies:
 - text
 - containers
 - array
+- MemoTrie
+- memoize
+- parallel
+- bytestring
+- transformers
+- heap
+- fgl
+- graphviz
+- timeit
+- vector
+#- regex-pcre-builtin
+
+
 default-extensions:
-- OverloadedStrings 
+- OverloadedStrings
+- ScopedTypeVariables
+- LambdaCase
+- ViewPatterns
+- MultiWayIf
 ghc-options:
+- -O2
+- -fprof-late
 - -Wall
 - -Wcompat
 - -Widentities
@@ -45,6 +64,7 @@ executables:
     main:                Main.hs
     source-dirs:         app
     ghc-options:
+    
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N

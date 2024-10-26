@@ -1,6 +1,6 @@
 cabal-version: 2.2
 
--- This file has been generated from package.yaml by hpack version 0.36.0.
+-- This file has been generated from package.yaml by hpack version 0.37.0.
 --
 -- see: https://github.com/sol/hpack
 
@@ -25,9 +25,25 @@ source-repository head
 
 library
   exposed-modules:
+      AltN16
       Lib
       N1
+      N10
+      N11
+      N12
+      N13
+      N14
+      N15
+      N16
+      N17
+      N17Astar
+      N17Old
+      N17U
+      N18
+      N19
       N2
+      N20
+      N20_bck
       N24
       N3
       N4
@@ -45,12 +61,26 @@ library
       src
   default-extensions:
       OverloadedStrings
-  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
+      ScopedTypeVariables
+      LambdaCase
+      ViewPatterns
+      MultiWayIf
+  ghc-options: -O2 -fprof-late -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
   build-depends:
-      array
+      MemoTrie
+    , array
     , base >=4.7 && <5
+    , bytestring
     , containers
+    , fgl
+    , graphviz
+    , heap
+    , memoize
+    , parallel
     , text
+    , timeit
+    , transformers
+    , vector
   default-language: Haskell2010
 
 executable AdventOfCode-exe
@@ -63,13 +93,27 @@ executable AdventOfCode-exe
       app
   default-extensions:
       OverloadedStrings
-  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+      ScopedTypeVariables
+      LambdaCase
+      ViewPatterns
+      MultiWayIf
+  ghc-options: -O2 -fprof-late -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       AdventOfCode
+    , MemoTrie
     , array
     , base >=4.7 && <5
+    , bytestring
     , containers
+    , fgl
+    , graphviz
+    , heap
+    , memoize
+    , parallel
     , text
+    , timeit
+    , transformers
+    , vector
   default-language: Haskell2010
 
 test-suite AdventOfCode-test
@@ -83,11 +127,25 @@ test-suite AdventOfCode-test
       test
   default-extensions:
       OverloadedStrings
-  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+      ScopedTypeVariables
+      LambdaCase
+      ViewPatterns
+      MultiWayIf
+  ghc-options: -O2 -fprof-late -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       AdventOfCode
+    , MemoTrie
     , array
     , base >=4.7 && <5
+    , bytestring
     , containers
+    , fgl
+    , graphviz
+    , heap
+    , memoize
+    , parallel
     , text
+    , timeit
+    , transformers
+    , vector
   default-language: Haskell2010
