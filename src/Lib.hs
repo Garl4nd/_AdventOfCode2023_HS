@@ -17,18 +17,20 @@ module Lib
   , module N16  
   , module N17
   , module N17Old
-  , module N17
   , module N17Astar
   , module N18
   , module N19
   , module N20
+  , module N21
+  , module N22
+  , module N23
   , module AltN16  
   , module N24
+  , module N25
   ) where
 
 import N1
 import N2
-import N24
 import N3
 import N4
 import N5
@@ -47,6 +49,11 @@ import N17
 import N18
 import N19
 import N20
+import N21
+import N22
+import N23
+import N24
+import N25
 import N17Astar
 import N17Old
 import AltN16

@@ -6,7 +6,10 @@ module ParsingFuncs
   , writeXY
   , pairs
   , trimSpace
+  , trimChar
   , countIf
+  , groupBySorted
+  , groupByUnique
   ) where
 
 import Data.Char (isNumber)
@@ -22,8 +25,6 @@ wordsWhen p s =
 
 splitOn :: Eq a => a -> [a] -> [[a]]
 splitOn c = wordsWhen (== c)
-
-
 
 trimIf :: (a -> Bool) -> [a] -> [a]
 trimIf p = reverse . (dropWhile p) . reverse . (dropWhile p)
@@ -61,6 +62,12 @@ writeXY fileName xs ys = do
 groupByUnique :: (Ord b) => (a->b) -> [a] -> [(a, Int)]
 groupByUnique ordFunc ls = map (\grp -> (fst $ head grp, length grp)) (  groupBy ( (==) `on` snd) sortedList) where
    sortedList = sortOn snd $ map (\x -> (x, ordFunc x)) ls
+
+--groupBySorted :: (Ord b) => (a->b) -> [a] -> [([a],b)]
+groupBySorted ordFunc ls =  map (\grp -> (fst <$> grp, snd.head $ grp)) $ groupBy ( (==) `on` snd) sortedList where
+   sortedList = sortOn snd $ zip ls mappedList
+   mappedList = ordFunc <$> ls
+
 
 countIf :: (a-> Bool) -> [a] -> Int
 countIf p ls = length $ filter p ls

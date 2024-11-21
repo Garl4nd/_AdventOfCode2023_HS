@@ -45,7 +45,11 @@ solution n =  case n of
               18 -> Just $ getSolutions18 "inputs/18.txt"              
               19 -> Just $ getSolutions19 "inputs/19.txt"             
               20 -> Just $ getSolutions20 "inputs/20.txt"             
-              24 -> Just $ getSolutions24 "inputs/24.txt" 
+              21 -> Just $ getSolutions21 "inputs/21.txt"
+              22 -> Just $ getSolutions22 "inputs/22.txt"
+              23 -> Just $ getSolutions23 "inputs/23.txt"
+              24 -> Just $ getSolutions24 "inputs/24.txt"
+              25 -> Just $ getSolutions25 "inputs/25.txt"
               _ -> Nothing 
 
 main :: IO ()
