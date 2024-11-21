@@ -26,6 +26,8 @@ source-repository head
 library
   exposed-modules:
       AltN16
+      Debugging
+      GraphMaker
       Lib
       N1
       N10
@@ -44,7 +46,11 @@ library
       N2
       N20
       N20_bck
+      N21
+      N22
+      N23
       N24
+      N25
       N3
       N4
       N5

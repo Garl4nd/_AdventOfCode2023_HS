@@ -105,3 +105,12 @@ pUri = do
       void (single '#')
       T.pack <$> some (alphaNumChar <|> char '&' <|> char '=')
   return $ Uri uriScheme uriAuthority path query fragment
+
+line = "9vtglcdvkgcgrvm4sevenrhppknqfvhldfgqhpgdqfv"
+
+type SParser = Parsec Void String
+
+parseAOC1 :: String -> [Int]
+parseAOC1 = runParser numParser ""  where 
+  numParser :: SParser [Int]
+  numParser = L.decimal 

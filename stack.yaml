@@ -42,7 +42,7 @@ extra-deps: [MemoTrie-0.6.11,  newtype-generics-0.6.2, memoize-1.1.2,  parallel-
            Win32-2.14.0.0,
            filepath-1.4.300.2,
            time-1.14, 
-           timeit-2.0]
+           timeit-2.0, unix-2.8.5.1]
 #, regex-base-0.94.0.2, regex-pcre-builtin-0.95.2.3.8.44]
 packages:
 - .

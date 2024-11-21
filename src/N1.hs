@@ -68,22 +68,4 @@ getSolutions1 filename = do
     file <- TIO.readFile filename --getSum "Inputs/1.txt"
     return (solution1 file, solution2 file)
 
--- getSumWrite :: String -> IO T.Text
--- getSumWrite fileName = do
---     file <- TIO.readFile fileName
---     let fileLines = T.lines file
---     let makeText x = T.pack $ show x
---     let nums = map (extractNum extNumberMap) fileLines
---     let pairToStr line num = line <>"\t --> " <> makeText num
---     let resStr = "The result is "<> makeText (sum nums )
---     TIO.writeFile "input_aug.txt" $ T.unlines $ zipWith pairToStr fileLines nums    
---     TIO.appendFile "input_aug.txt"  $ "\n____\n"<>resStr
---     return  resStr
-
--- findAllNums:: TextnumMap -> T.Text -> [Int]
--- findAllNums textnumMap text = accum text [] where
---     accum:: T.Text -> [Int] -> [Int]
---     accum "" acc = acc
---     accum rest acc =  let newRes = (case getNumOrNothing textnumMap rest of 
---                                     Nothing -> []
---                                     (Just x) -> [x]) in accum (T.tail rest) (acc ++ newRes)
+    
